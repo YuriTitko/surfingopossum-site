@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* root styling */
+
+:root{
+  --light-bright:#E5FCC2;
+  --light:#9DE0AD;
+  --dark:#594F4F;
+  --primary:#45ADA8;
+  --secondary:#547980;
+  --border:#E9EFEE;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+* > *{
+  box-sizing: border-box;
+}
+
+/* global styling */
+.text-light-bright{
+  color: var(--light-bright);
+}
+
+.text-light{
+  color: var(--light);
+}
+
+.text-dark{
+  color: var(--dark);
+}
+
+.text-primary{
+  color: var(--primary);
+}
+
+.text-secondary{
+  color: var(--secondary);
+}
+
+.bg-light{
+  color:var(--light);
+}
+
+.bg-dark{
+  color:var(--dark);
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+/* section styling */
+
+/* ------- Navigation Menu ------- */
+.navbar{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-brand{
+  font-family: "DM Sans", sans-serif;;
+  font-weight: bold;
+  font-size: 32px;
+  align-self: center;
+}
+
+.collapse{
+  align-self: center;
+}
+
+.nav-link{
+  font-size: 18px;
+  margin: 12px;
+  color: var(--dark);
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link:hover{
+  color:var(--primary);
+}
+
+.search-box{
+  display: inline;
+  border-right: 1px solid var(--secondary);
+  padding-right: 12px;
+  margin-right: 10px;
+}
+/* ------- .Navigation Menu ------- */
+
+header{
+  background-color: var(--border);
+}
+
+footer, p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
