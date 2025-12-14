@@ -10,3 +10,27 @@ new Masonry("#posts .grid",{
     itemSelector: '.grid-item',
     gutter: 20
 });
+
+// swiper library initialization
+new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 5,
+    autoplay: {
+        delay: 3000
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2
+        },
+        600: {
+            slidesPerView: 3
+        },
+        900: {
+            slidesPerView: 4
+        },
+        1200: {
+            slidesPerView: 5
+        }
+    }
+});
